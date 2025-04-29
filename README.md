@@ -9,13 +9,15 @@ A Java program that calculates the Shannon entropy of discrete probability distr
 ## **Mathematical Definition**
 For a sequence containing values 1 through m:
 
-<p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=H = -\sum_{i=1}^m p_i \log_2 p_i">
-</p>
+<p>
+$H \;\; = \;\; - \; (\, p_1 \log_2 p_1 \;+\;
+                          p_2 \log_2 p_2 \;+\; \ldots \;+\;
+                          p_m \log_2 p_m)$
+
 
 Where:
-- \( p_i \) = proportion of integers equal to i
-- \( 0\log_2 0 \) is treated as 0
+- $p_i$ = proportion of integers equal to i
+- $\log_2 0$ is treated as 0
 
 ## **Usage**
 1. **Compile** the program:
@@ -57,4 +59,3 @@ $ java ShannonEntropy 6 < loaded-die.txt
 - Evaluating randomness
 - Feature selection in ML
 - Data compression analysis
-```
